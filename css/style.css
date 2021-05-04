@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b9144f;
+}
+.container{
+    margin: auto;
+    width: 40%;
+}
+se voglio tirare via il bordo automatico di un input
+
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+/****************
+TITOLO
+****************/
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: white;
+}
+/****************
+FORM
+****************/
+.container-form{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.container-form form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #b9144f;
+    margin-bottom: 20px
+}
+input, select{
+    border-radius: 5px;
+    border: solid 1px #b9144f;
+    margin-bottom: 40px;
+    padding: 4px;
+}
+
+/****************
+PULSANTI
+****************/
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#genera, #annulla{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 4px;
+    background-color: lightgray;
+    color: #b9144f;
+    font-weight: 800;
+}
+
+#genera{
+    border: 1px solid purple;
+    margin-right: 30px;
+}
+/************************
+DESCRIZIONE BIGLIETTO
+************************/
+
+.container-description{
+    background-color: white;
+    padding: 20px;
+}
+.passenger{
+    background-color: gray;
+
+}
+
+.information-passenger{
+    display: flex;
+    flex-direction: row;
+
+}
+.ticket-description{
+    display: flex;
+    flex-direction: row;
+    border-top: 1PX solid black;
+    border-bottom: 1PX solid black;
+    align-items: center;
+}
+
+.ticket-description > div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+}
+
+.title-descriptive{
+    padding-bottom: 50px;
+}
+.passenger, .ticket-description{
+    padding: 15px;
+}
+
+.carriage,
+.code, .ticket-price{
+    padding-left: 50px;
+}
+
+.passenger{
+    width: 18%;
+}
+.passenger > h4{
+    padding-bottom: 5px;
+}
+#sconto{
+    width: 80%;
+}
+
+.code, .ticket-price{
+    width: 24%;
+}
+
+/****************
+BONUS
+****************/
+
+.buttons > #genera:hover,
+.buttons > #annulla:hover{
+    transform: scale(1.3);
+}

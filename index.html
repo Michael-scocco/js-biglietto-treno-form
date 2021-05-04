@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+
+        <title>js-biglietto-treno-form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <main class="container">
+
+        <!-- TITOLO -->
+        <div class="title">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        </div>
+        <!-- /TITOLO -->
+
+        <!-- FORM -->
+        <div class="container-form">
+            <form>
+                <div class="personal-data">
+                    <label for="fname">Nome Cognome</label>
+                    <input type="text" id="name-lastname" name="fname" placeholder="Metti il nome cognome">
+                </div>
+
+                <div class="kilometres">
+                    <label for="lname">Km da percorrere</label>
+                    <input type="text" id="go-miles" name="lname" placeholder="Quanti km?">
+                </div>
+
+                <div class="select">
+                    <label for="lname">Fascia di età</label>
+                    <select name="" placeholder="insert age'" id="age">
+                        <option value="young">minors</option>
+                        <option value="adult">over 18</option>
+                        <option value="senior">over 65</option>
+                    </select>
+                </div>
+
+            </form>
+
+            <div class="buttons">
+                <button id="genera" type="button" name="button">Genera</button>
+                <button id="annulla" type="button" name="button">Annulla</button>
+            </div>
+
+
+         </div> <!--container-form -->
+         <!-- /FORM -->
+
+         <!-- IL TUO BIGLIETTO -->
+         <div class="title">
+             <h2>IL TUO BIGLIETTO</h2>
+         </div>
+         <!-- /IL TUO BIGLIETTO -->
+
+         <!-- DETTAGLIO PASSEGGER -->
+         <div class="container-description">
+
+             <h3>DETTAGLIO PASSEGGERI</h3>
+
+             <div class="information-passenger">
+                 <div class="passenger">
+                     <h4>NOME PASSEGERO</h4>
+                     <span id="insert-name"><strong>Pippo</strong></span>
+                 </div>
+
+                 <div class="ticket-description">
+                     <div class="offert">
+                         <span class="title-descriptive"><strong>Offerta</strong></span>
+                         <span id="sconto">Sconto minorenne</span>
+                     </div>
+
+                     <div class="carriage">
+                         <span class="title-descriptive"><strong>Carrozza</strong></span>
+                         <span id="numero-carrozza">7</span>
+                     </div>
+
+                     <div class="code">
+                         <span class="title-descriptive"><strong>Codice Cp</strong></span>
+                         <span id="codice-biglietto">97928</span>
+                     </div>
+
+                     <div class="ticket-price">
+                         <span class="title-descriptive"><strong>Costo biglietto</strong></span>
+                         <span id="prezzo">3,36€</span>
+                     </div>
+                 </div> <!--ticket-description-->
+
+             </div> <!--information-passenger -->
+
+          </div> <!--container-description -->
+         <!-- /DETTAGLIO PASSEGGER -->
+
+         </main>
+
+        <script src="./js/main.js" charset="utf-8"></script>
+    </body>
+</html>
